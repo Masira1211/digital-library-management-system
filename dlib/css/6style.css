@@ -1,0 +1,109 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('../images/admin.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* Main layout */
+.main-layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* no scroll */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #fff4e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar .dashboard-btn {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #b07a3f;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-between; /* logout at bottom */
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #5a3e2b;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.menu-item:hover, .menu-item.active {
+    background: #b07a3f;
+    color: #fff;
+}
+
+.logout-btn {
+    font-weight: 600;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto; /* allows table scroll if needed */
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #5a3e2b;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 244, 230, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+table th, table td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: #b07a3f;
+    color: #fff;
+    font-size: 16px;
+}
+
+table tr:hover {
+    background-color: #f3e1d3;
+}
+
+table td {
+    font-size: 15px;
+}

@@ -1,0 +1,80 @@
+/* Body & html */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background: url('../images/adminhome.jpg') no-repeat center center/cover;
+  background-size: cover;
+}
+
+/* Top info */
+.top-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 25px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.top-info .logout-btn {
+  margin-left: auto;
+  background: #b07a3f;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.top-info .logout-btn:hover {
+  background: #8f6332;
+}
+
+/* Welcome container */
+.welcome-container {
+  max-width: 600px;
+  width: 90%;
+  margin: 60px auto 0;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.welcome-container h1 {
+  font-size: 36px;
+  color: #5a3e2b;
+  margin-bottom: 15px;
+}
+
+.welcome-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #8f6332;
+}
+
+.dashboard-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #b07a3f;
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+  background: #8f6332;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .welcome-container h1 { font-size: 28px; }
+  .welcome-container p { font-size: 16px; }
+}

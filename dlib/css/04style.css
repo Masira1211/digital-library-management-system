@@ -1,0 +1,194 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background: url('../images/user.jpg') no-repeat center center/cover;
+  background-size: cover;
+}
+
+/* Layout */
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  background: #fff4e6;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.dashboard-btn {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #b07a3f;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.dashboard-btn:hover {
+  background: #8a5c2b;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #5a3e2b;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.menu-item:hover, .menu-item.active {
+  background: #b07a3f;
+  color: #fff;
+}
+
+/* Content */
+.content {
+  margin-left: 220px;
+  flex: 1;
+  padding: 30px 60px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Form container */
+.issue-form {
+  background: rgba(255,244,230,1);
+  padding: 30px;
+  border-radius: 14px;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.issue-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #5a3e2b;
+  text-align: center;
+}
+
+.issue-form p {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #5a3e2b;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #b07a3f;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #8a5c2b;
+}
+
+.btn-secondary {
+  background: #e6e6e6;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #d4d4d4;
+}
+
+.message.success {
+  color: #2e7d32;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.message.error {
+  color: #b03f3f;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content {
+    padding: 20px 30px;
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .issue-form h2 {
+    font-size: 20px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+  }
+}

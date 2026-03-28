@@ -1,0 +1,119 @@
+/* Body & background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: url('../images/loginimage.jpg') no-repeat center center/cover;
+}
+
+/* Wrapper centers everything */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 32px;
+    color: #5a3e2b;
+    margin-bottom: 25px;
+}
+
+/* Single inputs & selects */
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #c4bfb5;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Row container for side-by-side inputs */
+.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.row input, .row select {
+    flex: 1;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #b07a3f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #8f6332;
+}
+
+/* Messages */
+.error, .message {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.message {
+    background: #d4edda;
+    color: #155724;
+}
+
+/* Links */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #3f2c20;
+}
+
+p a {
+    color: #b07a3f;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+}

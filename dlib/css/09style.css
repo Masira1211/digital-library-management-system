@@ -1,0 +1,148 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  overflow: hidden;
+  background: url('../images/admin.jpg') no-repeat center center/cover;
+  background-size: cover;
+}
+
+/* Layout */
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  background: #fff4e6;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.dashboard-btn {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #b07a3f;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.dashboard-btn:hover {
+  background: #8a5c2b;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item, .feature-box {
+  text-decoration: none;
+  color: #5a3e2b;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.menu-item:hover, .menu-item.active,
+.feature-box:hover, .feature-box.active {
+  background: #b07a3f;
+  color: #fff;
+}
+
+/* Content */
+.content {
+  margin-left: 220px;
+  flex: 1;
+  padding: 30px 60px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.table-container {
+  background: rgba(255,244,230,1);
+  padding: 20px; /* reduced from 30px */
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  max-width: 100%;
+  max-height: 500px; /* optional: limits vertical size */
+  overflow-y: auto;  /* enables scroll if content exceeds height */
+  overflow-x: auto;
+}
+.table-container h2 {
+  margin-top: 0;
+  font-size: 20px; /* slightly smaller */
+  color: #5a3e2b;
+  margin-bottom: 12px; /* reduced from 20px */
+  text-align: center;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+thead {
+  background-color: #b07a3f;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content {
+    padding: 20px 30px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table-container {
+    padding: 20px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}

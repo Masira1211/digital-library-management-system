@@ -1,0 +1,140 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('../images/admin.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* Main layout */
+.main-layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #fff4e6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-btn {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #b07a3f;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #5a3e2b;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.menu-item:hover, .menu-item.active {
+    background: #b07a3f;
+    color: #fff;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+.content form {
+    background: rgba(255,244,230,1);
+    padding: 35px 25px;
+    border-radius: 15px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.form-message {
+    font-size: 20px;
+    font-weight: 600;
+    color: #5a3e2b;
+    text-align: center;
+}
+
+/* Row */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row input, .row select {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Buttons */
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn-row button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-btn {
+    background: #6A5ACD;
+    color: #fff;
+}
+
+.update-btn {
+    background: #b07a3f;
+    color: #fff;
+}
+
+.delete-btn {
+    background: #d9534f;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.message {
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
