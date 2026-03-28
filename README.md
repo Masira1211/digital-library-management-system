@@ -80,3 +80,49 @@ The system uses the following tables:
 
 ---
 
+## 🔹 Screenshots
+
+### 🏠 Homepage
+
+The homepage provides the entry point to the system with navigation options for login and registration.
+![Homepage](screenshots/index.png)
+
+### 🔐 Login Page
+
+The login page allows users to enter credentials and access the system based on their role.
+![Login Page](screenshots/loginpage.png)
+
+### 🛠 Admin Dashboard
+
+The admin dashboard provides centralized control for managing books, users, and system activities.
+![Admin Dashboard](screenshots/admindashboard.png)
+
+### 👤 User Dashboard
+
+The user dashboard allows users to search books, request issues, view history, and manage their account.
+![User Dashboard](screenshots/userdashboard.png)
+
+### ➕ Add Book (Admin Module)
+
+This page allows the administrator to add new books with complete details into the system.
+![Add Book](screenshots/addbook.png)
+
+### ✏️ Modify Book (Admin Module)
+
+The modify book page enables the admin to update existing book details in the database.
+![Modify Book](screenshots/modifybook.png)
+
+### ❌ Delete Book (Admin Module)
+
+This interface allows the admin to remove book records from the system.
+![Delete Book](screenshots/deletebook.png)
+
+### 📖 View Books (Admin Module)
+
+Displays the list of all books available in the system along with their details and availability.
+![View Books](screenshots/viewbook.png)
+
+### 🔍 Search Book (User Module)
+
+Allows users to search for books and check availability in real time.
+![Search Book](screenshots/searchbook.png)
