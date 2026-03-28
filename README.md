@@ -77,3 +77,6 @@ The system uses the following tables:
 * Email/SMS notifications
 * Book reservation system
 * Analytics dashboard
+
+---
+
